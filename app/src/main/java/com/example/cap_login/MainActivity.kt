@@ -9,4 +9,4 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         //setContentView(R.layout.signup)
     }
-}
+}//수정테스트좀 하겠습니다.
