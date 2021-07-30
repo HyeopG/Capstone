@@ -1,5 +1,6 @@
 package com.example.cap_login
 
+import android.content.Intent
 import android.os.Bundle
 import android.os.PersistableBundle
 import android.view.MenuItem
@@ -9,6 +10,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.GravityCompat
 import com.google.android.material.navigation.NavigationView
 import kotlinx.android.synthetic.main.main.*
+import kotlinx.android.synthetic.main.signup.*
 
 
 class Main : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
@@ -49,9 +51,14 @@ class Main : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListene
         {
             layout_drawer.closeDrawers()
         }
+//
+//        else if()
+
         else
         {
-            super.onBackPressed()
+            startActivity(Intent(this, Main::class.java))
+            finish()
+
         }
     }
 }
