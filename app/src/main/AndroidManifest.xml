@@ -12,15 +12,25 @@
         <activity
             android:name=".Signup_Activity"
             android:label="@string/title_activity_signup"
-            android:theme="@style/Theme.Cap_Login.NoActionBar"></activity>
-        <activity android:name=".Login_Activitiy">
+            android:theme="@style/Theme.Cap_Login.NoActionBar">
+
+        </activity>
+        <activity
+            android:name=".Login_Activitiy">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Main_Activity" />
+        <activity
+            android:name=".Main_Activity"
+            android:theme="@style/Theme.Cap_Login.NoActionBar">
+
+        </activity>
+
+
+
     </application>
 
 </manifest>
